@@ -13,7 +13,7 @@ session_start();
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>login form</title>
-   <link rel="stylesheet" href="loginCSS.css">
+   <link rel="stylesheet" href="login.css">
 
 </head>
 <body>
@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
 
    $result = mysqli_query($conn, $select);
 
-   if(mysqli_num_rows($result) > ){
+   if(mysqli_num_rows($result) > 0){
       $row = mysqli_fetch_array($result);
    
       $user_id = $row['user_id'];
@@ -71,7 +71,7 @@ if(isset($_POST['submit'])){
       <input type="email" name="email" required placeholder="Enter your email">
       <input type="password" name="password" required placeholder="Enter your password">
       <input type="submit" name="submit" value="login now" class="form-btn">
-      <p>Don't have an account? <a href="/Web System/Landing_Page/Register/register.php">Register</a></p>
+      <p>Don't have an account? <a href="register.php">Register</a></p>
    </form>
 
 </div>
