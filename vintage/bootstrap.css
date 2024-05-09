@@ -1,0 +1,60 @@
+/* Custom CSS */
+
+body {
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    padding: 0 15px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.btn-link {
+    margin-left: 10px;
+}
+
+.bg-success {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.table {
+    width: 100%;
+}
+
+.alert {
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 0;
+}
+
+.btn-success,
+.btn-primary,
+.btn-danger,
+.btn-link {
+    border-radius: 0;
+}
+
+/* Table Styling */
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .bg-success {
+        padding: 10px;
+    }
+}

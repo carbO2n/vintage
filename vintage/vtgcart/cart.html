@@ -3,142 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LASTWHISPER.VTG</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="cart.css" />
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <div class="nav">
-          <div class="nav__logo">
-            <a href="#">LASTWHISPER.VTG</a>
-            <link
-              href="https://fonts.cdnfonts.com/css/metal-vengeance"
-              rel="stylesheet"  
-            />
-          </div>
-          <ul class="nav__links" id="nav__links">
-            <li class="link"><a href="#home">Home</a></li>
-            <li class="link"><a href="#about">About</a></li>
-            <li class="link"><a href="#shirts">Browse Our Collection</a></li>
-            <li class="link"><a href="#members">Members</a></li>
-          </ul>
-          
-        
-          </div>
-        </div>
-      </nav>
-      <div class="section__container header__container" id="home">
-        <h1>
-          Beyond Threads, Beyond Trends: Find Your Vintage at LastWhisper.VTG
-        </h1>
-        <p>Curated collection of authentic vintage shirts, tees, and more.</p>
-        <form action="/">
-          <input type="text" placeholder="Search products" />
-          <button type="submit"><i class="ri-search-eye-line"></i></button>
-        </form>
-      </div>
+    <header>
+      <h1>Your Shopping Cart</h1>
     </header>
-
-    <section id="shirts" class="shirts__container">
-      <!-- Added id="shirts" to the section -->
-      <div class="shirt">
-        <img
-          src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t1.15752-9/379642378_2091202791222041_5837132253235196635_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeErBPuh7FfaHWAfT0WdI9JfjlRVXvHVuoyOVFVe8dW6jLrvnDAkat3IWWQ9wKdlM32elI0QryBkloG04KfzZ3DH&_nc_ohc=flvXPCPnof4AX8eN9V-&_nc_oc=AQm07Jz87MBEBS5iOejceL9HuzFs2kHoot6q6gQkgG5SzMkDe_X7i-LnCF-2kqVK5Jo&_nc_ht=scontent.fwnp1-1.fna&cb_e2o_trans=t&oh=03_AdQXQP6Nbcbpf2iPAg95v5zC3qGrLQW2LgWBqmBzOx53Xg&oe=660F68FB"
-          alt="Shirt 1"
-        />
-        <h3>2020 Thy Art Is Murder "Imminent Death" Tour Shirt</h3>
-        <p>$25</p>
-        <button>Add to Cart</button>
+    <main>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
       </div>
-      <div class="shirt">
-        <img
-          src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t1.15752-9/429644136_341861055510496_4234039988966597112_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEUPx1J-g_swYpGkoKjmGML1-crElFmgnLX5ysSUWaCcrZ4Y_6-fUwcNQrJT_xXt_cHvJyCJkA9MtyP9DTClGN6&_nc_ohc=aObtCBQ0kZEAX90Cgj9&_nc_ht=scontent.fwnp1-1.fna&cb_e2o_trans=t&oh=03_AdRBOPFbOjkML6gz8G6xpCa0JECIodGQpwbyjmZHBQ0l_Q&oe=660F63A1"
-          alt="Shirt 2"
-        />
-        <h3>1996 At The Gates "Slaughter of the Soul</h3>
-        <p>$100</p>
-        <button>Add to Cart</button>
+      <div class="cart-total">
+        <h2>Total</h2>
+        <h3>$<span id="totalAmount">0.00</span></h3>
       </div>
-      <div class="shirt">
-        <img
-          src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t1.15752-9/370207160_383852710647895_4362652241911040271_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHxf2i8Jef9FH1Om8I6z26T4YFSz1dFQ9_hgVLPV0VD30AJFvYvrA0K_dRnY_5F9nQDbKFC3Nb7c68yM78jEUkT&_nc_ohc=M2DDvsvv134AX-tImR3&_nc_ht=scontent.fwnp1-1.fna&cb_e2o_trans=t&oh=03_AdRoam0v0uCqDjZiqFRyo3sdH19Jn0-Ju29GRlvVH7wMGg&oe=660F8606"
-          alt="Shirt 2"
-        />
-        <h3>2019 Knotfest Road Tour Shirt</h3>
-        <p>$45</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="shirt">
-        <img
-          src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t1.15752-9/429081751_1775324556212842_7036532875284877067_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE9c2a85sLTEfXsaS540mdUy6UIZgwcg2DLpQhmDByDYGH5Vd8bD3cP23Fg57r9t_suyuvcZM-odxvJ7f8u9NcK&_nc_ohc=jXds4omTZa0AX8nlQ6c&_nc_ht=scontent.fwnp1-1.fna&cb_e2o_trans=t&oh=03_AdT0XGbrTTUltHMtXWpdPBse-M45HSWm0zDuZHSjC0NfXg&oe=660F6E0A"
-          alt="Shirt 2"
-        />
-        <h3>2002 Deftones Def Leppard Inspired Logo</h3>
-        <p>$200</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="shirt">
-        <img
-          src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t1.15752-9/400609428_668104068773973_6333593881102942108_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFN-7_5ynbr_oaEZLqDuIb4yiY5hLp7pl7KJjmEunumXsFeP79hF4_S9f1E5SvAYQ9dm62vdsuYjc-CqHBL9WaM&_nc_ohc=Y1KEyLbXIXUAX-kjt8s&_nc_ht=scontent.fwnp1-1.fna&cb_e2o_trans=t&oh=03_AdRMAVXjrhFjIJeVS2KbcVbeQakmolrCk_qLBYFmvkqrHA&oe=660F87C4"
-          alt="Shirt 2"
-        />
-        <h3>2000s Darkthrone "Under a Funeral Moon Reprint</h3>
-        <p>$40</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="shirt">
-        <img
-          src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t1.15752-9/429118718_948012930094754_6727501195065272667_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEuldW7QHnLft5VvZq9B7AxhQCO71IyyMmFAI7vUjLIyT5EThKXJIaI1BGxFfUE-K-wSbtuidjfiXcDptqxeOL7&_nc_ohc=6CWTkBGSEmcAX-_05G0&_nc_ht=scontent.fwnp1-1.fna&cb_e2o_trans=t&oh=03_AdRtQsv4toGb9KIrSFE_9wrMVxGPOgT2wN890zc3Q3kuIg&oe=660FA2AE"
-          alt="Shirt 2"
-        />
-        <h3>2003 Exhumed "Anatomy is Destiny"</h3>
-        <p>$50</p>
-        <button>Add to Cart</button>
-      </div>
-    </section>
-
-    <aside class="cart__container">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <i class="fa fa-shopping-cart" style="font-size:48px;color:red"></i>
-      <ul class="cart__items">
-        <!-- Cart items will be added dynamically here -->
-      </ul>
-    </aside>
-
-    <footer class="footer">
-      <div class="section__container footer__container">
-        <div class="footer__content">
-          <h4>YOUR SUPPORT MEANS A LOT TO US</h4>
-          <p>
-            We encourage you to log in to your account and support our site by
-            following and sharing. Your engagement greatly benefits us. Please
-            note that our service exclusively offers customization; we do not
-            own the shirt labels, as they are not our property.
-          </p>
-        </div>
-      </div>
-      <div class="section__container footer__bar">
-        <div class="footer__logo">
-          <h4><a href="#">LASTWHISPER.VTG</a></h4>
-          <p>Copyright © 2024. All rights reserved.</p>
-        </div>
-      </div>
+    </main>
+    <footer>
+      <button id="checkoutBtn">Checkout</button>
     </footer>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
-
     <script>
-      document
-        .querySelector(".nav__links li:nth-child(3) a")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document.querySelector("#shirts").scrollIntoView({
-            behavior: "smooth",
+      document.addEventListener("DOMContentLoaded", function () {
+        const cartItemsContainer = document.querySelector(".cart-items");
+        const totalAmountElement = document.getElementById("totalAmount");
+        const checkoutBtn = document.getElementById("checkoutBtn");
+
+        let cartItems = [];
+
+        // Function to render cart items
+        function renderCartItems() {
+          cartItemsContainer.innerHTML = "";
+          let totalAmount = 0;
+
+          cartItems.forEach((item) => {
+            const itemElement = document.createElement("div");
+            itemElement.classList.add("cart-item");
+
+            const itemImage = document.createElement("img");
+            itemImage.src = item.imageSrc;
+            itemImage.alt = item.name;
+
+            const itemDetails = document.createElement("div");
+            const itemName = document.createElement("h4");
+            itemName.textContent = item.name;
+            const itemPrice = document.createElement("p");
+            itemPrice.textContent = `$${item.price.toFixed(2)}`;
+
+            itemDetails.appendChild(itemName);
+            itemDetails.appendChild(itemPrice);
+
+            itemElement.appendChild(itemImage);
+            itemElement.appendChild(itemDetails);
+
+            cartItemsContainer.appendChild(itemElement);
+
+            totalAmount += item.price;
           });
+
+          totalAmountElement.textContent = totalAmount.toFixed(2);
+        }
+
+        // Function to handle adding item to cart
+        function addToCart(item) {
+          cartItems.push(item);
+          renderCartItems();
+        }
+
+        // Sample item to add to cart (replace with actual item data)
+        const sampleItem = {
+          name: "Sample Item",
+          price: 25.99,
+          imageSrc: "sample-item.jpg",
+        };
+
+        // Add sample item to cart initially (replace with actual item data)
+        addToCart(sampleItem);
+
+        // Checkout button event listener
+        checkoutBtn.addEventListener("click", function () {
+          // Handle checkout logic here
+          alert("Checkout functionality is not implemented yet.");
         });
+      });
     </script>
   </body>
 </html>

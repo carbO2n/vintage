@@ -62,7 +62,14 @@ if (isset($_POST['submit'])) {
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="register.css">
+<style>
+        background-image: url(vtg pics/bg.jpg'); 
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
 
+</style>
+        
 </head>
 
 <body>

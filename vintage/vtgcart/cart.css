@@ -1,233 +1,91 @@
-/* CSS for your vintage shirt shop landing page */
-
-/* General styles */
-body {
-    font-family: 'Roboto', sans-serif;
+/* Reset styles */
+* {
     margin: 0;
     padding: 0;
-}
-
-/* Header styles */
-header {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 32, 32, 0.282),
-      rgba(255, 195, 54, 0.223)
-    ),
-    url("https://scontent.fwnp1-1.fna.fbcdn.net/v/t39.30808-6/363318040_6354368457985133_1434982318982394937_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeEL-PklsgivGMaD8rUVOBbIJeNoiQYtWKcl42iJBi1Yp6Hwt3I0wnsp_Jf1yrHsuQLNA-JkqVecx1sud_LYDD61&_nc_ohc=LIljtpTikPwAX_6KxLl&_nc_ht=scontent.fwnp1-1.fna&cb_e2o_trans=t&oh=00_AfAR8W1MKGSpMYKKv1yNRygzwcwl9XpUqH8oJzlUyH-3Xg&oe=65EAD647");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    box-sizing: border-box;
   }
-
-  .header__container {
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    color: var(--black);
   }
   
-  .header__container h1 {
-    margin-bottom: 1rem;
-    font-size: 4.5rem;
-    font-weight: 600;
-    font-family: var(--header-font);
-    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-  }
-
-  .header__container p {
-    max-width: 600px;
-    margin-inline: auto;
-    margin-bottom: 4rem;
-    font-size: 1.2rem;
-        text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-
-  }
-  
-  .header__container form {
-    width: 100%;
-    max-width: 350px;
-    margin-inline: auto;
-    margin-bottom: 4rem;
-    padding-block: 0.25rem;
-    padding-inline: 1.25rem 0.25rem;
-    display: flex;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--white);
-    border-radius: 5rem;
-  }
-  
-  .header__container input {
-    width: 100%;
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    color: var(--white);
-    background-color: transparent;
-  }
-  
-  .header__container input::placeholder {
-    color: var(--white);
-  }
-  
-  .header__container button {
-    padding: 11px 12px;
-    font-size: 1.25rem;
-    outline: none;
-    border: none;
-    color: var(--white);
-    background-color: var(--primary-color);
-    border-radius: 100%;
-    cursor: pointer;
-  }
-  
-  .header__container a {
-    display: inline-block;
-    padding: 0 12px;
-    font-size: 3rem;
-    color: var(--white);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--white);
-    border-radius: 100%;
-  }
-
-.nav {
+  /* Main styles */
+  main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-}
-
-.nav__logo{
-    font-size: 2.0rem;
-    font-weight: 900;
-    font-family: 'Metal Vengeance', sans-serif;
-    color: var(--text-dark);
-    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-}
-
-.nav__links {
-        list-style: none;
-        display: flex;
-        justify-content: center; /* Align links in the center horizontally */
-        margin-right: auto; /* Push the links to the right */
-    }
-    
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .nav__logo a {
-        font-size: 2.0rem;
-        font-weight: 900;
-        font-family: 'Metal Vengeance', sans-serif;
-        color: var(--text-dark);
-        text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    }
-    
-    .nav__links {
-        list-style: none;
-        display: flex;
-        justify-content: center; /* Align links in the center horizontally */
-        margin-right: auto; /* Push the links to the right */
-    }
-    
-    .nav__links li {
-        margin-right: 20px;
-    }
-    
-    .nav__actions a {
-        margin-left: 20px;
-    }
-    
-
-.nav__links li {
-    margin-right: 20px;
-}
-
-.nav__actions a {
-    margin-left: 20px;
-
-}
-
-/* Main content styles */
-.section__container {
-    padding: 40px;
-}
-.shirt {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-.shirts__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.shirt {
-    margin: 20px;
-    text-align: center;
-}
-
-.shirt img {
-    width: 200px;
-    height: auto;
-}
-
-.shirt button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-/* Cart styles */
-.cart__container {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #f8f9fa00;
     padding: 20px;
-    border: 1px solid #dee2e600;
-}
-
-.cart__container h2 i {
-    margin-right: 10px; /* Add space between icon and text */
-    font-size: 24px; /* Adjust icon size */
+    margin: 20px;
   }
   
-
-.cart__items {
-    list-style: none;
-    padding: 0;
-
-}
-
-/* Footer styles */
-.footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer__content h4 {
-    margin-bottom: 10px;
-}
-
-.footer__logo h4 {
+  /* Cart items styles */
+  .cart-items {
+    flex-grow: 1;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .cart-item h4 {
     margin-bottom: 5px;
-}
-
-.footer__logo a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer__logo a:hover {
-    text-decoration: underline;
-}
+  }
+  
+  /* Cart total styles */
+  .cart-total {
+    flex-basis: 20%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .cart-total h2 {
+    margin-bottom: 10px;
+  }
+  
+  .cart-total h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #checkoutBtn {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #checkoutBtn:hover {
+    background-color: #ff704d;
+  }
+  

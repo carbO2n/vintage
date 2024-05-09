@@ -7,7 +7,6 @@
    outline: none; border:none;
    text-decoration: none;
 }
-
 .container{
    min-block-size: 100vh;
    display: flex;
@@ -20,6 +19,18 @@
 .container .content{
    text-align: center;
 }
+.nav__logo {
+  flex: 1;
+}
+
+.nav__logo a {
+  font-size: 2.0rem;
+  font-weight: 900;
+  font-family: 'Metal Vengeance', sans-serif;
+  color: var(--text-dark);
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
 
 .container .content h3{
    font-size: 30px;
@@ -104,7 +115,7 @@
 }
 
 .form-container form .form-btn{
-   background: #fbd0d9;
+   background: #ffffff;
    color:crimson;
    text-transform: capitalize;
    font-size: 20px;

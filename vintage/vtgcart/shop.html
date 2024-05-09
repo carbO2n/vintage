@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LASTWHISPER.VTG</title>
+<link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+<header class="header">
+<nav>
+<div class="nav">
+<div class="nav__logo">
+<a href="#">LASTWHISPER.VTG</a>
+<link href="https://fonts.cdnfonts.com/css/metal-vengeance" rel="stylesheet" />
+</div>
+<ul class="nav__links" id="nav__links">
+<li class="link"><a href="#home">Home</a></li>
+<li class="link"><a href="#about">About</a></li>
+<li class="link"><a href="#shirts">Browse Our Collection</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="section__container header__container" id="home">
+<div class="shirts__container">
+<div class="shirt-frame">
+<img src="vtg cart/background.jpg" alt="">
+<h1>
+Beyond Threads, Beyond Trends: Find Your Vintage at LastWhisper.VTG
+</h1>
+<p>Curated collection of authentic vintage shirts, tees, and more.</p>
+<form action="/">
+<input type="text" placeholder="Search products" />
+<button type="submit"><i class="ri-search-eye-line"></i></button>
+</form>
+</div>
+</header>
+
+<section id="shirts" class="shirts__container">
+<!-- Added id="shirts" to the section -->
+<div class="shirt" data-item-id="1">
+<img
+src="product1.jpg"
+alt="Shirt 1"
+/>
+<h3>2020 Thy Art Is Murder "Imminent Death" Tour Shirt</h3>
+<p>$25</p>
+<button class="add-to-cart-btn">Add to Cart</button>
+</div>
+<div class="shirt" data-item-id="2">
+<img
+src="product2.jpg"
+alt="Shirt 2"
+/>
+<h3>1996 At The Gates "Slaughter of the Soul</h3>
+<p>$100</p>
+<button class="add-to-cart-btn">Add to Cart</button>
+</div>
+<div class="shirt" data-item-id="3">
+<img
+src="product3.jpg"
+alt="Shirt 3"
+/>
+<h3>2019 Knotfest Road Tour Shirt</h3>
+<p>$45</p>
+<button class="add-to-cart-btn">Add to Cart</button>
+</div>
+<div class="shirt" data-item-id="4">
+<img
+src="product4.jpg"
+alt="Shirt 4"
+/>
+<h3>2002 Deftones Def Leppard Inspired Logo</h3>
+<p>$200</p>
+<button class="add-to-cart-btn">Add to Cart</button>
+</div>
+<div class="shirt" data-item-id="5">
+<img
+src="product5.jpg"
+alt="Shirt 2"
+/>
+<h3>2000s Darkthrone "Under a Funeral Moon Reprint</h3>
+<p>$40</p>
+<button class="add-to-cart-btn">Add to Cart</button>
+</div>
+<div class="shirt" data-item-id="6">
+<img
+src="product6.jpg"
+alt="Shirt 2"
+/>
+<h3>2003 Exhumed "Anatomy is Destiny"</h3>
+<p>$50</p>
+<button class="add-to-cart-btn">Add to Cart</button>
+</div>
+</section>
+
+<aside class="cart__container">
+<a href="cart.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i class="fa fa-shopping-cart" style="font-size:48px;color:red"></i>
+  <span id="cartCount">0</span>
+</a>
+</aside>
+
+<footer class="footer">
+<div class="section__container footer__container">
+<div class="footer__content">
+<h4>YOUR SUPPORT MEANS A LOT TO US</h4>
+<p>
+We encourage you to log in to your account and support our site by
+following and sharing. Your engagement greatly benefits us. Please
+note that our service exclusively offers customization; we do not
+own the shirt labels, as they are not our property.
+</p>
+</div>
+</div>
+<div class="section__container footer__bar">
+<div class="footer__logo">
+<h4><a href="#">LASTWHISPER.VTG</a></h4>
+<p>Copyright © 2024. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+
+<script>
+document
+.querySelector(".nav__links li:nth-child(3) a")
+.addEventListener("click", function (event) {
+event.preventDefault();
+document.querySelector("#shirts").scrollIntoView({
+behavior: "smooth",
+});
+});
+
+// JavaScript to update the cart count
+let cartCount = 0;
+let cartItems = [];
+
+// Update cart count initially
+updateCartCount();
+
+function updateCartCount() {
+  const cartCountElement = document.getElementById('cartCount');
+  cartCountElement.textContent = cartCount;
+}
+
+// Add event listener to all add-to-cart buttons
+const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const item = this.parentElement;
+    const itemId = item.getAttribute('data-item-id');
+    if (!cartItems.includes(itemId)) { // Check if item is already in cart
+      cartCount++; // Increment cart count
+      cartItems.push(itemId); // Add item to cartItems array
+      updateCartCount(); // Update the cart count
+      button.disabled = true; // Disable the button after adding an item
+    }
+  });
+});
+</script>
+</body>
+</html>
